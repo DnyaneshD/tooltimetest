@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { withRouter, RouteComponentProps } from "react-router";
 
 interface IQuestionDetails {
   choices: any;
@@ -12,8 +13,8 @@ interface IQuestionDetailsState {
   questionDetails: IQuestionDetails;
 }
 
-export class QuestionDetails extends React.PureComponent<
-  {},
+class QuestionDetails extends React.PureComponent<
+  RouteComponentProps<any>,
   IQuestionDetailsState
 > {
   state = { questionDetails: {} as IQuestionDetails };
@@ -46,3 +47,5 @@ export class QuestionDetails extends React.PureComponent<
     );
   }
 }
+
+export default withRouter(QuestionDetails);

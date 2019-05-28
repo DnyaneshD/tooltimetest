@@ -1,15 +1,16 @@
 import React from "react";
+import { withRouter, RouteComponentProps } from "react-router";
 
 import { dateFormatter } from "../../helper/formatDateTime";
 import "./questionStyle.css";
 
-interface IQuestion {
+interface IQuestion extends RouteComponentProps<any> {
   questionText: string;
   publishedAt: string;
   lengthOfChoices: string;
 }
 
-export const Question = (props: IQuestion) => {
+export const Question = withRouter((props: IQuestion) => {
   return (
     <div>
       <div className="box">
@@ -21,4 +22,4 @@ export const Question = (props: IQuestion) => {
       </div>
     </div>
   );
-};
+});

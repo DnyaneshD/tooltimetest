@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { withRouter, RouteComponentProps } from "react-router";
 
 import { Question } from "../question/questionComponent";
 import "./questionsListStyles.css";
@@ -15,7 +16,10 @@ interface IQuestionsState {
   questionsLamp: IQuestionListItem[];
 }
 
-export class QuestionsList extends React.PureComponent<{}, IQuestionsState> {
+class QuestionsList extends React.PureComponent<
+  RouteComponentProps<any>,
+  IQuestionsState
+> {
   state = { questionsLamp: [] };
 
   public componentDidMount() {
@@ -48,3 +52,5 @@ export class QuestionsList extends React.PureComponent<{}, IQuestionsState> {
     );
   }
 }
+
+export default withRouter(QuestionsList);

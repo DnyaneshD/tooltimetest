@@ -1,6 +1,6 @@
 import React from "react";
 import "./app.css";
-import { QuestionsList } from "../../components/questionsList/questionsListComponent";
+import QuestionsList from "../../components/questionsList/questionsListComponent";
 
 const App: React.FC = () => {
   return (

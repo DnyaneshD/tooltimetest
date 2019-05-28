@@ -1,11 +1,11 @@
 import React from "react";
 import "./app.css";
-import { Questions } from "../../components/questions/questionsComponent";
+import { QuestionsList } from "../../components/questionsList/questionsListComponent";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Questions />
+      <QuestionsList />
     </div>
   );
 };

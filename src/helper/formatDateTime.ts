@@ -7,7 +7,7 @@ export function dateFormatter(dateValue: string): string {
   };
 
   try {
-    const finalValue = new Date(dateValue).toLocaleDateString("de-DE", options);
+    const finalValue = new Date(dateValue).toLocaleDateString("en-US", options);
     return finalValue;
   } catch {
     return "Invalid Date";

@@ -58,6 +58,7 @@ class QuestionDetails extends React.PureComponent<
               key={c.url}
               url={c.url}
               votes={c.votes}
+              isVoted={this.isVoted(c) > -1}
             />
           ))}
         <button
@@ -69,6 +70,9 @@ class QuestionDetails extends React.PureComponent<
       </div>
     );
   }
+
+  isVoted = (c: IChoice) =>
+    this.state.votes.findIndex((v: string) => v === c.url);
 
   handleVote = (c: IChoice): void => {
     this.setState({

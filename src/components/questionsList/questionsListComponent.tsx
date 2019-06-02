@@ -42,6 +42,7 @@ class QuestionsList extends React.PureComponent<
             this.state.questionsLamp.map((q: IQuestionListItem) => (
               <Question
                 key={q.url}
+                url={q.url}
                 questionText={q.question}
                 lengthOfChoices={q.choices.length}
                 publishedAt={q.published_at}

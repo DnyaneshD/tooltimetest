@@ -1,0 +1,9 @@
+.chocies {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 40px;
+  border-block-end-color: black;
+  justify-content: center;
+  border: 1px solid #000;
+  width: 70%;
+}

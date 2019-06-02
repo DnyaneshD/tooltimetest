@@ -35,7 +35,7 @@ class QuestionsList extends React.PureComponent<
 
   public render() {
     return (
-      <div>
+      <div className="questionsList">
         <h1>Questions</h1>
         <div className="container">
           {this.state.questionsLamp.length > 0 &&

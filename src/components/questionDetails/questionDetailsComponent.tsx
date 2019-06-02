@@ -2,6 +2,8 @@ import React from "react";
 import axios from "axios";
 import { withRouter, RouteComponentProps } from "react-router";
 
+import "./questionDetailsStyles.css";
+
 interface IQuestionDetails {
   choices: any;
   published_at: string;
@@ -32,7 +34,7 @@ class QuestionDetails extends React.PureComponent<
 
   public render() {
     return (
-      <div>
+      <div className="questionDetails">
         <h1>Question Detail</h1>
         <h2>Question </h2>
         <div className="chocies">

@@ -1,4 +1,8 @@
-.container {
+.questionsList {
+  margin-left: 5%;
+}
+
+.questionsList .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
   grid-template-rows: repeat(2, 70px);

@@ -1,8 +1,12 @@
-.chocies {
+.questionDetails {
+  margin-left: 5%;
+}
+.questionDetails .chocies {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   grid-template-rows: 25px 25px;
   border-block-end-color: black;
   justify-content: left;
   border: 1px solid #000;
+  width: 70%;
 }

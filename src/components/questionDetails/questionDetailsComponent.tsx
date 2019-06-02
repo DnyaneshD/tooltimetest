@@ -86,8 +86,6 @@ class QuestionDetails extends React.PureComponent<
     const urlIndex = votes.findIndex((v: string) => v === c.url);
 
     if (urlIndex > -1) {
-      votes.splice(urlIndex, 1);
-
       this.setState({
         ...this.state,
         votes: this.state.votes.filter(v => v !== c.url)

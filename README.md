@@ -29,3 +29,4 @@ Things I missed due to time limit:
 
 1. Better polished UI
 2. Unit tests for all the components
+3. Spinning wait control on AJAX request
